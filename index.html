@@ -17,9 +17,23 @@
 		<div class="container">
     		<div class="blurb">
         		<h1>Hi there, I'm Abhishek Singh!</h1>
-				<p>This is where I code for fun!</p>
+				<p id="hi">This is where I code for fun!</p>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
+		<script>
+                 var i = 0;
+                 var txt = 'This is where I code for fun';
+                 var speed = 50;
+
+                 function typeWriter() {
+                  if (i < txt.length) {
+                    document.getElementById("hi").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                     }
+                    }
+                </script>
+		
 		<footer>
     		<ul>
         		<li><a href="mailto:abhishere@gmail.com">email</a></li>
